@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="icon" href="./1656332953564.jpg"/>
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+ </head>
+<body>
+    <img class="logo" src="./1656332953564.jpg" alt="logo"/>
+    <form class="Form" >
+        <div class="error" id="err"></div>
+        <div class=" inp-con">
+        <div class="title">1. <span class="desc">name</span></div>
+        <input type="text" name="name" required/>
+        <div class="required"><p>required</p></div>
+        </div>
+        <div class=" inp-con">
+            <div class="title">2. <span class="desc">e-mail</span></div>
+            <input type="email" name="email" required/>
+            <div class="required"><p>required</p></div>
+            </div>
+            <div class=" inp-con">
+                <div class="title">3. <span class="desc">Phone-number</span></div>
+                <input type="text"required name="phone" />
+                <div class="required"><p>required</p></div>
+                </div>
+                <div class=" inp-con">
+                    <div class="title">4. <span class="desc">gender</span></div>
+                  <div class="radio" name="gender">
+
+                      <input type="radio" id="male" name="gender" value="male" /><span class="desc">Male</span>
+                    </div>
+                    <div>
+
+                        <input type="radio" name="gender" id="male" value="female"  /><span class="desc">Female</span>
+                      </div>
+                      <input type="text" id="gend-text" name="gender-other" placeholder="others(specify)"/>
+                          
+                    </div>
+                    <div class=" inp-con">
+                        <div class="title">5. <span class="desc">Event-location</span></div>
+                        <input type="text" required name="location"/>
+                        <div class="required"><p>required</p></div>
+                        </div>
+                        <div class=" inp-con">
+                            <div class="title">6. <span class="desc">Event-Date</span></div>
+                            <input type="date" reqired name="date"/>
+                            <div class="required"><p>required</p></div>
+                            </div>
+                            <div class=" inp-con">
+                                <div class="title">7. <span class="desc">estimated No of invitees</span></div>
+                                <input type="text" name="invitees"/>
+                                <div class="required"><p>required</p></div>
+                                </div>
+                                <div class=" inp-con">
+                                    <div class="title">8. <span class="desc">Type of event</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="wedding" value="wedding"><span class="desc">Wedding</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="proposal" value="proposal"><span class="desc">Proposal</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="bridal-shower" value="bridal-shower"><span class="desc">Bridal Shower</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="adult-birthday" value="adult-birthday"><span class="desc">Adult Birthday</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="Kiddies-birthday" value="Kiddies-birthday"><span class="desc">Kiddies Birthday</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="Baby-Shower" value="Baby-Shower"><span class="desc">Baby Shower</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="Child-Dedication" value="Child-Dedication"><span class="desc">Child Dedication</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="anniversary" value="anniversary"><span class="desc">Anniversary</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="conference" value="conference"><span class="desc">Conference/AGM</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="coronation" value="coronation"><span class="desc">Coronation</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="fashion-show" value="fashion-show"><span class="desc">Fashion Show/Runway</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="exhibition" value="exhibition"><span class="desc">Exhibition</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="concert" value="concert"><span class="desc">Concert/Gala</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="award" value="award"><span class="desc">Awards</span></div>
+                                        <div class="opt"><input type="radio" name="event_type" id="funeral" value="funeral"><span class="desc">Funeral/Burial</span></div>
+                                        <input type="text" name="event_type_other" placeholder="others(specify)"/>
+                                    
+                                        <div class="required"><p>required</p></div>
+                                    </div>
+                                    <div class=" inp-con">
+                                        <div class="title">9. <span class="desc">Venue Type</span></div>
+                                        <div class="opt"><input type="radio" name="venue_type" id="hall" value="hall"><span class="desc">Hall</span></div>
+                                        <div class="opt"><input type="radio" name="venue_type" id="outdoor" value="outdoor"><span class="desc">Outdoor</span></div>
+                                        <div class="opt"><input type="radio" name="venue_type" id="room" value="room"><span class="desc">Room</span></div>
+                                        <input type="text" name="venue_type_other" placeholder="other(specify)"/>
+
+                                        <div class="required"><p>required</p></div>
+                                        </div>
+                                        <div class=" inp-con">
+                                            <div class="title">10. <span class="desc">Event Attendance Type</span></div>
+                                            <div class="opt"><input type="radio" name="attendance_type" id="physical" value="physical"><span class="desc">Physical/Onsite</span></div>
+                                            <div class="opt"><input type="radio" name="attendance_type" id="virtual" value="virtual"><span class="desc">Virtual</span></div>
+                                            <div class="opt"><input type="radio" name="attendance_type" id="hybrid" value="hybrid"><span class="desc">Hybrid</span></div>
+                                            <input type="text" name="attendance_type_other" placeholder="other(specify)"/>
+    
+                                            <div class="required"><p>required</p></div>
+                                            </div>
+                                            <div class=" inp-con">
+                                                <div class="title">11. <span class="desc">Theme of Event</span></div>
+                                                <input type="text" name="theme"/>
+                                                
+                
+                                                </div>
+                                                <div class=" inp-con">
+                                                    <div class="title">12. <span class="desc">Service required</span></div>
+                                                    <div class="opt"><input type="checkbox" name="service" value="planning" id="planning"><span class="desc">Event Planning</span></div>
+                                                    <div class="opt"><input type="checkbox" name="service" value="management" id="management"><span class="desc">Event Management</span></div>
+                                                    <div class="opt"><input type="checkbox" name="service" value="coordination" id="coordination"><span class="desc">Event Coordination</span></div>
+                                                    <div class="opt"><input type="checkbox" name="service" value="outsourcing" id="outsourcing"><span class="desc">Vendor Soucring</span></div>
+                                                    <input type="text" name="service_other" placeholder="others(specify)"/>
+
+                    
+                                                    </div>
+                                                    <div class=" inp-con">
+                                                        <div class="title">13. <span class="desc">Color(s) of the day</span></div>
+                                                        <input type="text" name='color' required/>
+                                                        <div class="required"><p>required</p></div>
+                                                        </div>
+                                                        <div class=" inp-con">
+                                                            <div class="title">14. <span class="desc">budget</span></div>
+                                                            <input type="text" name="budget" required/>
+                                                            <div class="required"><p>required</p></div>
+                                                        </div>
+                                                        <p class="result" id="result"></p>
+                                                        <button type="submit" class="sub">Submit</button>
+                                        
+                </form>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script type="text/javascript" src="./form.js"></script>
+    
+</body>
+</html>

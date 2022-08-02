@@ -1,0 +1,262 @@
+
+:root{
+    --primary:#071E4A;
+    width: 100vw
+}
+ body{
+     box-sizing: border-box;
+     max-width: 100vw;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+    font-family: 'Ibarra Real Nova', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    
+ }
+.norwood-logo{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.hamburger{
+    height:40px;
+    
+
+}
+.description{
+ font-size: 20px;
+ text-align: center;
+}
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    color: white;
+    align-items:center ;
+    font-size: 18px;
+    width: 100%;
+}
+
+.norwood{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    color: white;
+    display: flex;
+    flex-direction: column;
+   align-items: flex-end;
+   justify-content: flex-end;
+    width:100%;
+    height:300px;
+
+}
+.norwood > h1{
+    animation-name: blink;
+    animation-duration:3s;
+    animation-delay:2s ;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite;
+    font-size: 35px;
+    font-weight: 500;
+    font-family:"Raleway", sans-serif;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-right: 80px;
+    
+    
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    align-self: center;
+}
+.hamburger{
+    color: white;
+    height:40px;
+    background-color: blue;
+    width: 40px;
+}
+.img{
+    margin-right: 10px;
+    animation-name:spin ;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.heading{
+      font-weight: 700;
+      font-size: 35px;
+      font-family: 'Raleway', sans-serif;
+      text-transform: capitalize;
+      text-align: center;
+      text-decoration: overline;
+      margin-top: 20px;
+      color: var(--primary);
+}
+.desc{
+    color: var(--primary);
+    opacity:0.8;
+    font-size: 22px;
+    text-align: center;
+    
+}
+.mission{
+    display: flex;
+    justify-content:  space-around;
+    margin: 50px auto;
+    width: 100%;
+}
+.mission>div{
+    background-color: rgba(235, 232, 232, 0.6);
+     height: 250px;
+     border-radius: 30px;
+     width: 400px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    transition: all 1s ease;
+    padding: 10px;
+
+     
+}
+.no-line{
+    text-decoration: wavy;
+}
+.mission>div:hover{
+    transform:scale(1.1)
+}
+.people{
+    display: grid;
+    grid-template-columns:400px 400px 400px  ;
+    grid-gap: 45px;
+    width: 100%;
+    margin: 0 auto;
+}
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(182, 179, 179, 0.6);
+    border-radius: 50px;
+    height: 350px;
+    border:  10px groove burlywood;
+    opacity: 0.8;
+    transition: all 1s ease;
+}
+.person:hover{
+    transform:scale(1.1) rotate(0.5deg);
+    border:none;
+}
+.team{
+ margin-bottom: 30px;
+}
+.person>p{
+ text-align: center;
+ margin-top: 20px;
+ font-size: 20px;
+}
+footer{
+    position: relative;
+    top: 40px;
+    
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width:100%;
+    background-color: var(--primary);
+    color: rgba(255,255,255, .6);
+}
+.since{
+    color: rgba(255,255,255, .6);
+
+    margin: 20px auto;
+}
+.contact, .group{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.location{
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+}
+.loc-con{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.group{
+    align-items: center;
+}
+i{
+    margin-right:15px ;
+}
+
+@keyframes blink{
+    from{
+        opacity:0;
+        transform:translateX(0) translateY(0) scale(1);
+        color: white;
+
+    }
+
+    to{
+ opacity: 1;
+ transform:translateX(-20px) translateY(-50px)scale(1.1);
+ color: orange;
+    }
+}
+
+@keyframes spin {
+    from{
+     transform:rotate(0)
+    }
+    to{
+  transform:rotate(90deg);
+    }
+}
+@media(max-width:480px){
+    .mission{
+        flex-direction: column;
+        
+    }
+    .mission>div{
+        margin: 20px auto;
+         width: 300px;
+    }
+    .mission>div:hover{
+        transform: scale(0.9);
+    }
+    .description{
+        width: 200px;
+    }
+    .people{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .person{
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .contact{
+        flex-direction: column;
+    }
+    .norwood>h1{
+        font-size: 22px;
+    }
+}

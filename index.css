@@ -1,0 +1,290 @@
+:root{
+    --primary:#071E4A;
+    width: 100vw;
+}
+nav{
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Lato', sans-serif;
+     color:var(--primary); 
+     font-weight: 400;
+     text-transform:capitalize;
+     font-size: larger;
+     font-family: "Uchen", serif;
+     position:sticky;
+     top: 0;
+     z-index: 9;
+     width: 100%;
+     background-color: lightblue;
+}
+.norwood-logo{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+}
+hr{
+   color: var(--primary);  
+}
+
+.hamburger{
+    height:30px;
+    position: relative;
+    left: 50px;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+.sec{
+   position:relative;
+   width: 100vw;
+   height:400px;
+   display: flex;
+   overflow-x: hidden;
+   
+}
+
+.slide{
+     width: 100%;
+     height:inherit;
+     position:absolute;
+     transition:all 1s ease;
+     transform: translateX(100vw);
+     background-size: cover;
+     margin: 0 auto;
+}
+.active{
+    transform:translatex(0)
+}
+#slide1{
+    background-image: url('./assets/background1.jpg');
+}
+#slide2{
+    background-image: url('./assets/background2.jpg');
+
+}
+#slide3{
+    background-image: url('./assets/background3.jpg');
+}
+ #slide4{
+    background-image: url('./assets/background4.jpg');
+} 
+.sec>h1{
+    font-weight:400;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    opacity:1;
+    text-align: center;
+    margin:0 auto;
+    position: absolute;
+    top:300px;
+    left: 20vw;
+}
+br{
+    height:20px;
+}
+.text-section{
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    top:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servix{
+    position: relative;
+    top:80px;
+    margin-bottom: 50px;;
+}
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+
+}
+.text-section>p{
+    text-align: center;
+    margin: 40px auto;
+    padding: 0;
+    color: var(--primary);
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+ 
+}
+.service{
+    height: 200px;
+    display:flex;
+    z-index: 4;
+     width:250px;
+     border-radius:30px;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.5s ease;
+     
+}
+.service:hover{
+    transform: scale(1.1);
+}
+.service-image{
+ height:150px;
+ width:200px;
+ 
+}
+.links{
+    position:absolute;
+    top:90px;
+    margin-right: 25px;
+    transform:translateX(-100%);
+    color: white;
+    transition:all 0.8s ease;
+    background-color: var(--primary);
+}
+.links>ul{
+     list-style: none;
+     font-size: larger;
+}
+.links>ul>a{
+    height: 60px;
+    margin:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.3s  ease;
+    color: white;
+    text-decoration: none;
+}
+.links>ul>a:hover{
+     background-color: #023186;
+}
+.visible{
+    transform: translateX(0);
+}
+.dull{
+    opacity: 0.8;
+}
+.cert{
+    position: relative;
+    top:140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cert>h1{
+    margin:50px auto;
+}
+.cert>img{
+    position: relative;
+    transform: scale(2);
+     top: 100px;
+}
+footer{
+    position: relative;
+    top: 400px;
+    height:auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width:100%;
+    background-color: var(--primary);
+    color: rgba(255,255,255, .6);
+}
+.since{
+    color: rgba(255,255,255, .6);
+
+    margin: 20px auto;
+}
+.location{
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+}
+.loc-con{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+i{
+    margin-right: 20px;
+}
+.contact, .group{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.contact{
+    justify-content: space-around;
+}
+@media (max-width:480px){
+.description{
+ font-size: small;
+ text-align: center;
+ width:160px
+}
+.norwood-logo{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+}
+.hamburger{
+    height:30px;
+    position: relative;
+    left: 0;
+    bottom: 10px;
+    right: 35px;
+}
+
+.service{
+    transform: scale(0.9);
+    margin: 20px auto;
+}
+.dull{
+    font-size: 18px;
+}
+.heading{
+    font-size:26px;
+}
+.appoem_img{
+    transform: none;
+    height: 150px;
+    max-width: 150px;
+}
+.text-section>p{
+    width: 90%;
+    font-size: 14px;
+}
+.contact{
+    flex-direction: column;
+}
+footer{
+    height: auto;
+}
+
+}
+

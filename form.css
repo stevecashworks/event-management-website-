@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    background-image: url('./sel.jpg');
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+
+}
+.err-span{
+   display:flex;
+   width: 100%;
+    align-items: center;
+    color:white;
+    font-size:1.1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.icon{
+    background-color:transparent;
+    color:white;
+    margin-right: 20px;
+}
+.error{
+    background-color:rgba(220, 20, 60,.6);
+    width: 60%;
+    display: none;
+    justify-self: left;
+    position:sticky;
+}
+.logo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:20px auto;
+}
+.Form{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type="text"], input[type="email"]{
+    height:35px;
+    border:0;
+    outline: 0;
+    border-bottom: 2px solid gray;
+    width:100%;
+    font-size: 20px;;
+    
+}
+.inp-con{
+    background-color:white;
+    width:35%;
+    margin: 12px auto;
+}
+.title{
+    background-color: crimson;
+    color:white;
+    text-transform: capitalize;
+    height:auto;
+    font-size: 20px;
+    padding-left:10px;
+    text-align: center;
+}
+.desc{
+    margin-left: 10px;
+}
+.required > p{
+    background-color:lightgray;
+    padding:5px;
+    width:20%;
+    color: black;
+    border-radius: 45% 0;
+    margin-right: 15px ;
+    float: right;
+    
+}
+#gend-text{
+    margin:20px 0
+}
+input[type='date']{
+    width: 100%;
+    height:40px;
+    margin-top:10px
+}
+.opt{
+ margin: 15px;
+}
+.sub{
+    padding:10px;
+    background-color: crimson;
+    color:white;
+    border:0;
+}
+.result{
+    position:absolute;
+    
+    color:white;
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 20px;
+
+    
+}
+.gf{
+    width: 50%;
+    height:50%;
+}
+
+@media (max-width:480px){
+ .Form{
+    width:100%
+ }
+    .inp-con{
+    width:100%
+ }
+}
+@media  (max-width:768px){
+    .inp-con{
+        width:70%;
+    }
+}
